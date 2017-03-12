@@ -1,0 +1,14 @@
+---------------------------------------
+Current weather in  Delhi, INDIA is
+18 degree Celsius Haze
+Maximum temperature is 18 degree celsius and Minimum temperture is 18 degree celsius.
+
+Wind Speed: 3.6, Degree: None
+:Humidity: 45
+:Cloud: 20:
+Pressure: 1016
+:Sunrise at: 06:33 AM
+:Sunset at: 06:28 PM
+
+Last update from the server: 11:30 PM
+---------------------------------------
