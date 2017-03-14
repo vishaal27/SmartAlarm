@@ -1,5 +1,6 @@
 import datetime
 import json
+import time
 import urllib.request
 from espeak import espeak
 
@@ -64,12 +65,38 @@ def data_output(data):
     print('')
     print('Last update from the server: {}'.format(data['dt']))
     print('---------------------------------------')
-
-
-
+    espeak.synth('Hello Vishaal.')
+    time.sleep(2)
+    espeak.synth(' The current weather conditions in Delhi are')
+    time.sleep(2)
+    temp=data['temp']
+    espeak.synth('The current temperature is '+str(temp)+'degrees celsius')
+    time.sleep(2)
+    espeak.synth('The condition of the sky is '+data['sky'])
+    time.sleep(2)
+    espeak.synth('The maximum temperature in the day is '+str(data['temp_max'])+'degrees celsius')
+    time.sleep(2)
+    espeak.synth('The minimum temperature in the day is '+str(data['temp_min'])+'degrees celsius')
+    time.sleep(2)
+    espeak.synth('The relative humidity percentage is '+str(data['humidity']))
+    time.sleep(2)
+    time.sleep(2)
+    time.sleep(2)
 
 if __name__ == '__main__':
-    #try:
     	data_output(data_organizer(data_fetch(url_builder(1273294))))
-    #except IOError:
-     #   print('no internet')
+
+#{'sky': 'Haze', 
+#'pressure': 1016, 
+#'sunrise': '06:31 AM',
+ #'sunset': '06:29 PM',
+  #'temp_max': 24,
+   #'temp': 24,
+    #'city': 'Delhi',
+     #'wind': 4.6,
+      #'temp_min': 24,
+       #'cloudiness': 8,
+        #'wind_deg': None,
+#'dt': '06:00 PM', 
+ #'country': 'IN',
+ # 'humidity': 27
