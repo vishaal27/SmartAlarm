@@ -3,7 +3,7 @@ import email
 #from espeak import espeak 
 
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
-(retcode, capabilities) = mail.login('vishaal16119@iiitd.ac.in','nagpaltasveer')
+(retcode, capabilities) = mail.login('vishaal16119@iiitd.ac.in','')
 mail.list()
 mail.select('INBOX')
 
