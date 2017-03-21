@@ -4,7 +4,7 @@ import time
 from espeak import espeak
 
 user="vishaal16119@iiitd.ac.in"
-password="nagpaltasveer"
+password=""
 mail=imaplib.IMAP4_SSL('imap.gmail.com')
 (retcode, capabilities)=mail.login(user,password)
 mail.list()
