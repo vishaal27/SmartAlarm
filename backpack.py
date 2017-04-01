@@ -23,15 +23,19 @@ else:
 	time.sleep(4)
 count = 0
 for i in deadline_elements:
-	deadline = i.get_attribute('innerHTML')
-	print (deadline)
-	espeak.synth(deadline)
-	time.sleep(5)
+	#deadline = i.get_attribute('innerHTML')
+	#rint (deadline)
+	#espeak.synth(deadline)
+	#time.sleep(5)
 	count += 1
 
 for j in range(count):
 	i = deadline_counter[j]
 	d= i.get_attribute('innerHTML')
+	deadline=deadline_elements[j].get_attribute('innerHTML')
+	print(deadline)
 	print (d)
+	espeak.synth(deadline)
+	time.sleep(3)
 	espeak.synth(d)
 	time.sleep(5)
