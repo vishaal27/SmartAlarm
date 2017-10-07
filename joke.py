@@ -4,7 +4,7 @@ import requests
 from espeak import espeak
 
 
-joke = requests.get('https://api.github.com/user', headers={"Accept": "application/json"}).json()["joke"]
+joke = requests.get('https://icanhazdadjoke.com/', headers={"Accept": "application/json"}).json()["joke"]
 
 espeak.synth(joke)
 time.sleep(7)
